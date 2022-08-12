@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.questions.SymptomsFragment"
+    android:background="@drawable/splash_gradient">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            app:contentInsetStartWithNavigation="0dp"
+            app:navigationIcon="@drawable/ic_back_black"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar"
+            android:layout_marginStart="@dimen/app_margin"
+            android:layout_marginEnd="@dimen/app_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Symptoms :"
+                style="@style/AppbarTitle"
+                android:textColor="@color/white"/>
+
+            <CheckBox
+                android:id="@+id/chk_1_palpitations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="palpitations"
+                style="@style/CheckBoxText" />
+
+            <CheckBox
+                android:id="@+id/chk_2_tachycardia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tachycardia"
+                style="@style/CheckBoxText" />
+
+            <CheckBox
+                android:id="@+id/chk_3_tachycardia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="bradycardia"
+                style="@style/CheckBoxText" />
+
+            <CheckBox
+                android:id="@+id/chk_4_shortness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shortness of breath"
+                style="@style/CheckBoxText" />
+
+            <CheckBox
+                android:id="@+id/chk_5_chest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chest pain"
+                style="@style/CheckBoxText" />
+
+            <CheckBox
+                android:id="@+id/chk_6_dizziness"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dizziness"
+                style="@style/CheckBoxText" />
+
+            <CheckBox
+                android:id="@+id/chk_7_fainting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fainting"
+                style="@style/CheckBoxText" />
+
+            <CheckBox
+                android:id="@+id/chk_8_fatigue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fatigue"
+                style="@style/CheckBoxText" />
+
+
+            <Button
+                android:id="@+id/btn_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/app_margin"
+                android:elevation="0dp"
+                android:text="Result"
+                android:textColor="#fff" />
+
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

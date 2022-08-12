@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="fab_size_normal">56dp</dimen>
+    <dimen name="fragment_stream_fab_margin_bottom">68dp</dimen>
+
+    <!-- Dimens margin -->
+    <dimen name="app_margin">16dp</dimen>
+    <dimen name="medium_margin">12dp</dimen>
+    <dimen name="normal_margin">8dp</dimen>
+    <dimen name="low_margin">4dp</dimen>
+
+
+    <!-- Dimens Padding -->
+    <dimen name="app_padding">16dp</dimen>
+    <dimen name="app_low_padding">24dp</dimen>
+    <dimen name="large_padding">20dp</dimen>
+    <dimen name="medium_padding">12dp</dimen>
+    <dimen name="normal_padding">8dp</dimen>
+    <dimen name="low_padding">4dp</dimen>
+
+    <!-- Dimens Size -->
+    <dimen name="app_text_size">24sp</dimen>
+    <dimen name="large_text_size">16sp</dimen>
+    <dimen name="medium_text_size">14sp</dimen>
+    <dimen name="normal_text_size">12sp</dimen>
+    <dimen name="low_x_text_size">8sp</dimen>
+    <dimen name="low_xx_text_size">10sp</dimen>
+    <dimen name="low_text_size">4sp</dimen>
+
+    <dimen name="normalText">16sp</dimen>
+    <dimen name="app_small_margin">10dp</dimen>
+    <dimen name="smallText">14sp</dimen>
+    <dimen name="vertical_large_margin">16dp</dimen>
+
+    <!--Toolbar-->
+    <dimen name="toolbar_image_width">45dp</dimen>
+    <dimen name="toolbar_image_height">45dp</dimen>
+
+
+    <!--Settings fragment-->
+    <dimen name="settings_user_photo_width">55dp</dimen>
+    <dimen name="settings_user_photo_height">55dp</dimen>
+
+    <dimen name="settings_btn_change_photo_width">45dp</dimen>
+    <dimen name="settings_btn_change_photo_height">45dp</dimen>
+    <dimen name="settings_user_photo_border">2dp</dimen>
+    <dimen name="settings_ripple_effect_radius">4dp</dimen>
+    <dimen name="chat_image_width">180dp</dimen>
+    <dimen name="chat_image_height">180dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="app_cardCornerRadius">8dp</dimen>
+    <dimen name="corners_increased_decreased">12dp</dimen>
+    <dimen name="minimized_sheet_top_left_radius">48dp</dimen>
+
+
+    <!-- For Sheet -->
+    <dimen name="grid_0_5">4dp</dimen>
+    <dimen name="grid_1">8dp</dimen>
+    <dimen name="grid_1_5">12dp</dimen>
+    <dimen name="grid_2">16dp</dimen>
+    <dimen name="grid_3">24dp</dimen>
+    <dimen name="grid_4">32dp</dimen>
+    <dimen name="size_header_fragment">36sp</dimen>
+
+
+    <dimen name="status_normal_size">16sp</dimen>
+    <dimen name="status_small_size">12sp</dimen>
+    <dimen name="status_dot_normal_size">16dp</dimen>
+    <dimen name="status_dot_small_size">12dp</dimen>
+
+    <dimen name="ic_status_order_size">16dp</dimen>
+
+</resources>

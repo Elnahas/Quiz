@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="eduq.com.quiz.ui.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_quizQuestionsFragment"
+            app:destination="@id/quizQuestionsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_signinFragment"
+            app:destination="@id/signinFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_symptomsFragment"
+            app:destination="@id/symptomsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="eduq.com.quiz.ui.login.SigninFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signinFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/signinFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_signinFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment"
+            app:popUpTo="@id/signinFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/lessonFragment"
+        android:name="eduq.com.quiz.ui.lesson.LessonFragment"
+        android:label="fragment_lesson"
+        tools:layout="@layout/fragment_lesson" />
+    <fragment
+        android:id="@+id/quizQuestionsFragment"
+        android:name="eduq.com.quiz.ui.questions.QuizQuestionsFragment"
+        android:label="fragment_quiz_questions"
+        tools:layout="@layout/fragment_quiz_questions" >
+        <action
+            android:id="@+id/action_quizQuestionsFragment_to_resultFragment"
+            app:destination="@id/resultFragment"
+            app:popUpTo="@id/quizQuestionsFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="isBefore"
+            app:argType="boolean" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="eduq.com.quiz.ui.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_resultFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/resultFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="resultModel"
+            app:argType="eduq.com.quiz.data.model.ResultModel" />
+        <action
+            android:id="@+id/action_resultFragment_to_lessonFragment"
+            app:destination="@id/lessonFragment"
+            app:popUpTo="@id/resultFragment"
+            app:popUpToInclusive="true"/>
+        <argument
+            android:name="totalQ"
+            app:argType="integer" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="eduq.com.quiz.ui.login.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_signinFragment"
+            app:destination="@id/signinFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_splashFragment_to_adminHomeFragment"
+            app:destination="@id/adminHomeFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="eduq.com.quiz.ui.admin.AdminHomeFragment"
+        android:label="fragment_admin_home"
+        tools:layout="@layout/fragment_admin_home" >
+        <action
+            android:id="@+id/action_adminHomeFragment_to_signinFragment"
+            app:destination="@id/signinFragment"
+            app:popUpTo="@id/adminHomeFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_adminHomeFragment_to_resultStudentsFragment"
+            app:destination="@id/resultStudentsFragment" />
+        <action
+            android:id="@+id/action_adminHomeFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultStudentsFragment"
+        android:name="eduq.com.quiz.ui.admin.ResultStudentsFragment"
+        android:label="fragment_result_students"
+        tools:layout="@layout/fragment_result_students" >
+        <argument
+            android:name="userModel"
+            app:argType="eduq.com.quiz.data.model.UserModel" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="eduq.com.quiz.ui.login.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register" />
+    <fragment
+        android:id="@+id/symptomsFragment"
+        android:name="eduq.com.quiz.ui.questions.SymptomsFragment"
+        android:label="fragment_symptoms"
+        tools:layout="@layout/fragment_symptoms" />
+</navigation>

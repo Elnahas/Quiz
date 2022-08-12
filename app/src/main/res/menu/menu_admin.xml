@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_logout"
+        android:title="logout"
+        app:showAsAction="never"
+        android:icon="@drawable/ic_exit"
+        android:iconTint="@color/white"/>
+
+
+    <item
+        android:id="@+id/menu_add"
+        android:title="Add"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_baseline_person_add_24"
+        android:iconTint="@color/white"/>
+
+
+</menu>
